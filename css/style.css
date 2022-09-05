@@ -39,7 +39,7 @@ body {
 }
 
 .header_wrapper {
-  position:absolute;
+  position: absolute;
   width: 100%; 
   padding: 0 15px;  
   vertical-align: middle; 
@@ -178,7 +178,7 @@ body {
 .preview{
   height: 765px;
   padding: 122px 15px 20px 15px;
-  background: url(../img/bg-stories.jpg) no-repeat center; 
+  background: url(../img/intro-bg.jpg) no-repeat center; 
   background-size: cover;
 }
 
