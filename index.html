@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore the beauty of the World</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_wrapper_bg desktop_only"></div> 
+      <div class="header_wrapper">
+        <div class="header_block">
+          <a href="#" class="header_logo_link">
+            <img src="./img/svg/vector.svg" alt="logo" class="header_logo_pic" height="30" width="30">
+            <span class="desktop_only">Travel Portal</span>
+          </a>
+          <nav class="header_nav">
+            <ul>
+              <li class="mobile_only"><a href="#" class="header_nav_close header_nav_link">
+                <img src="./img/svg/close-sign.svg" alt="close">
+              </a></li>
+              <li><a href="#search_box" class="header_nav_link">How It Works</a></li>
+              <li><a href="#search_box" class="header_nav_link">Plan Your Trip</a></li>
+              <li><a href="#destinations" class="header_nav_link">Destinations</a></li>
+              <li><a href="#stories" class="header_nav_link">Travel Stories</a></li>
+              <li class="mobile_only"><a href="#" class="header_nav_link pop_upper">Account</a></li>
+              <li class="mobile_only"><a href="#social_links" class="header_nav_link">Social Media</a></li>
+            </ul>
+          </nav>
+          <button class="login_button desktop_only pop_upper">Login</button>   
+
+          <div class="header_burger">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+          </div>
+        </div>        
+      </div>
+      <div class="black_bg"></div>
+      
+      <div class="pop_up" id="pop_up">
+        
+        <form class="login_window" id="form_login">
+          <h4>Log in to your account</h4>
+          <button class="button_facebook"><span class='logo_facebook'><img src="img/svg/logo_facebook.svg" alt="facebook logo">Sign In with Facebook</span></button>
+          <button class="button_google"><span class='logo_google'><img src="img/svg/logo_google.svg" alt="google logo">Sign In with Google</span></button>
+          <div class="pop_up_or">or</div>      
+          <label for="email">E-mail</label>
+          <input class='email' type="email" name="email">
+          <label for="password">Password</label>
+          <input class='password' type="password" name="password">
+          <button type='submit' class="button_sign">Sign In</button>
+          <a class='forgot_pass' href="">Forgot Your Password?</a>
+          <p class="pop_up_footer">Don’t have an account? <span class="pop_up_toggler">Register</span></p>
+        </form>
+
+        <form class="register_window window_hide" id="form_register">
+          <h4>Create account</h4>
+          <label for="email">E-mail</label>
+          <input class='email' type="email" name="email">
+          <label for="password">Password</label>
+          <input class='password' type="password" name="password">
+          <button type='submit' class="button_sign">Sign Up</button>
+          <p class="pop_up_footer">Already have an account? <span class="pop_up_toggler">Log in</span></p>
+        </form>
+        
+      </div>     
+    </header>
+    
+    <main>
+      <section class="preview">
+        <div class="preview_wrapper">
+          <div class="preview_main_block">
+            <h1 class="desktop_only">Explore the beauty of the World</h1>
+            <p class="desktop_only">Receive personalized recommendations for countries, hotels, activities and more</p>
+            <form class="search_box" id="search_box">
+              <input type="text" placeholder="What would you like to do?">
+              <button class="start_button">Start Planning</button>
+            </form>
+          </div> 
+        </div>
+      </section>
+      
+      <section class="steps">
+        <div class="steps_main_block">
+          <h2>3 STEPS TO THE PERFECT TRIP</h2>
+          <div class="steps_cards_block">
+
+            <div class="steps_card">
+              <div class="steps_card_iconholder">
+                <img src="./img/svg/velo-icon.svg" alt="card 1">
+              </div>
+              <p>Tell us what you want to do</p>
+            </div>
+            
+            <div class="steps_card">
+              <div class="steps_card_iconholder">
+                <img src="./img/svg/calender-icon.svg" alt="card 2">
+              </div>
+              <p>Share us preferable dates </p>
+            </div>
+
+            <div class="steps_card">
+              <div class="steps_card_iconholder">
+                <img src="./img/svg/plane-icon.svg" alt="card 3">
+              </div>
+              <p>We will give you recommendations</p>
+            </div>
+          </div> 
+        </div>
+      </section>
+      
+      <section class="destinations" id="destinations">
+        <h2>POPULAR DESTINATIONS</h2>
+        <div class="destinations_cards_container courusel_center" id="destinations_cards_container">
+
+          
+          <div class="destinations_card">
+            <a href="">
+              <img class="desktop_only" src="./img/ICELAND.jpg" alt="destination 1">
+              <img class="mobile_only" src="./img/destination1_mobile.jpg" alt="destination 1">
+            </a>
+            <p>SPAIN</p>
+          </div>
+          <div class="destinations_card">
+            <a href="">
+              <img class="desktop_only" src="./img/JAPAN.jpg" alt="destination 2">
+              <img class="mobile_only" src="./img/destination2_mobile.jpg" alt="destination 2">
+            </a>
+            <p>JAPAN</p>
+          </div>
+          <div class="destinations_card">
+            <a href="">
+              <img class="desktop_only" src="./img/USA.jpg" alt="destination 3">
+              <img class="mobile_only" src="./img/destination3_mobile.jpg" alt="destination 3">
+            </a>
+            <p>USA</p>
+          </div>
+        </div>
+        
+        <div id="arrowleft">
+          <img class="mobile_only dest_arrow_left" src="./img/svg/dest_arrow_right.svg" alt="arrow left">
+        </div>
+        <img class="mobile_only dest_arrow_right" src="./img/svg/dest_arrow_right.svg" alt="arrow right" id="arrowright">
+        
+        <div class="destinations_pagination">
+          <div class="destination_pagination_circle"></div>
+          <div class="destination_pagination_circle_active"></div>
+          <div class="destination_pagination_circle"></div>
+        </div>
+
+        <button class="find_more_button">Find More</button>
+      </section>
+
+      <section class="stories">
+        <h2 id="stories">TRAVEL STORIES</h2>        
+        <div class="stories_bg">
+          <div class="stories_cards_container">
+            <div class="stories_card">
+              <img class="desktop_only" src="./img/stories1.jpg" alt="story 1">
+              <img class="mobile_only" src="./img/stories1_mobile.jpg" alt="story 1 mobile">
+              <div class="stories_card_text">
+                <h3>10 Photos of Attractive Thailand</h3>
+                <p class="desktop_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                  culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum 
+                  dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="mobile_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla.Lorem ipsum dolor sit a...</p>
+                <a href="#">Read More</a>
+              </div>       
+            </div>
+            
+            <div class="stories_card">
+              <img class="desktop_only" src="./img/stories2.jpg" alt="story 2">
+              <img class="mobile_only" src="./img/stories2_mobile.jpg" alt="story 2 mobile">
+              <div class="stories_card_text">
+                <h3>Canyonlands National Park, Utah</h3>
+                <p class="desktop_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                  culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit...</p>
+                <p class="mobile_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla.Lorem ipsum dolor sit a...</p>
+                <a href="#">Read More</a>
+              </div>       
+            </div>
+
+            <div class="stories_card">
+              <img class="desktop_only" src="./img/stories3.png" alt="story 3">
+              <img class="mobile_only" src="./img/stories3_mobile.jpg" alt="story 3 mobile">
+              <div class="stories_card_text">
+                <h3>I left my heart in the Mountains!</h3>
+                <p class="desktop_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                  deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur 
+                  adipiscing elit...</p>
+                <p class="mobile_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla.Lorem ipsum dolor sit a...</p>
+                <a href="#">Read More</a>
+              </div>       
+            </div>
+
+            <div class="stories_card">
+              <img class="desktop_only" src="./img/stories4.jpg" alt="story 4">
+              <img class="mobile_only" src="./img/stories4_mobile.jpg" alt="story 4 mobile">
+              <div class="stories_card_text">
+                <h3>The Longest journey in my life!</h3>
+                <p class="desktop_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                  est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="mobile_only" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla.Lorem ipsum dolor sit a...</p>
+                <a href="#">Read More</a>
+              </div>       
+            </div>
+                      
+            <button class="see_more_button">See More</button>         
+        
+          </div> 
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer_spacer1 desktop_only"> </div>
+        <p class="desktop_only">All Rights Reserved © Travel Portal</p>
+        <ul id="social_links" class="social_links">
+          <li><a href="https://github.com/elenakuznet"><img src="./img/social/github-logo.png" alt="social 1" width="32" height="32"></a></li> <!-- was 31x31 -->
+          <li><a href="https://www.youtube.com/c/RollingScopesSchool"><img src="./img/social/rs_video.svg" alt="social 2" width="34" height="28"></a></li> <!-- was 28x22 -->
+          <li><a href="https://rs.school/js-stage0/"><img src="./img/social/logo-rs.svg" alt="social 3" width="33" height="27"></a></li> <!-- was 32x26 -->
+        </ul>
+        <div class="footer_spacer2 desktop_only"> </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
